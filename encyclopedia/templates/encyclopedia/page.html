@@ -1,0 +1,19 @@
+
+{% extends "encyclopedia/layout.html" %}
+
+
+{% block title %}
+
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+	<div style="display: flex; flex-direction: row-reverse;">
+	</form> 
+	<a href="{% url 'encyclopedia:editpage' name %}" style="color: red; padding-top: 30px; padding-right: 30px;">Edit Page</a>
+	</div>
+	
+	{{content | safe}}
+
+
+{% endblock %}
